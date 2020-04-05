@@ -1,0 +1,19 @@
+# IReport App Android
+
+#[ 🚧 Work in progress 👷‍♀️⛏👷🔧️👷🔧 🚧 ] 
+
+## Use case
+
+Read and Report The local news.
+
+## Java to kotlin migration in progress
+
+The basic structure build old Android architecture to change new MVVM using kotlin language
+
+## Code structure
+
+The project uses Dagger 2 for DI, Rxjava2 for threading, Scarlet for Web socket connections and Some components of Architecture components
+
+ViewModel is provided in the base Lifecycle owner class through generic and then bounded to the ViewModel factory
+
+ViewModels depends on use cases where each task is handled through a Usecase

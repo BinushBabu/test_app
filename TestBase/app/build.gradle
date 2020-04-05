@@ -1,0 +1,135 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.example.testbase"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+
+        debug {
+            minifyEnabled false
+            //dev url
+            buildConfigField "String", "BASE_URL", "\"http://3.1.238.238:8000/api/\""
+            buildConfigField "String", "BASE_URL_WS", "\"ws://3.1.238.238:8000/ws/travel/\""
+//client url
+//            buildConfigField "String", "BASE_URL", "\"http://3.1.238.238:8080/api/\""
+//            buildConfigField "String", "BASE_URL_WS", "\"ws://3.1.238.238:8080/ws/travel/\""
+        }
+
+        clientUrl {
+            minifyEnabled false
+            buildConfigField "String", "BASE_URL", "\"http://3.1.238.238:8080/api/\""
+            buildConfigField "String", "BASE_URL_WS", "\"ws://3.1.238.238:8080/ws/travel/\""
+            signingConfig signingConfigs.debug
+            android {
+                lintOptions {
+                    checkReleaseBuilds false
+                    // Or, if you prefer, you can continue to check for errors in release builds,
+                    // but continue the build even when errors are found:
+                    abortOnError false
+                }
+            }
+        }
+
+        release {
+            buildConfigField "String", "BASE_URL", "\"http://3.1.238.238:8080/api/\""
+            buildConfigField "String", "BASE_URL_WS", "\"ws://3.1.238.238:8080/ws/travel/\""
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = kotlin_version
+        targetCompatibility = kotlin_version
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion = '29.0.2'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation "com.google.dagger:dagger:2.25.2"
+    kapt "com.google.dagger:dagger-compiler:2.25.2"
+    kapt "com.google.dagger:dagger-android-processor:2.25.2"
+    implementation "com.google.dagger:dagger-android-support:2.25.2"
+
+    implementation "com.squareup.retrofit2:retrofit:2.6.2"
+    implementation "com.squareup.retrofit2:converter-gson:2.6.2"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.6.2"
+
+    implementation "com.squareup.okhttp3:logging-interceptor:4.2.2"
+    implementation "com.squareup.okhttp3:okhttp:4.2.2"
+
+    implementation "io.reactivex.rxjava2:rxjava:$rx_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    implementation "io.reactivex.rxjava2:rxkotlin:$rxkotlin_version"
+    implementation "com.jakewharton.rxbinding2:rxbinding:2.2.0"
+    implementation "com.jakewharton.rxbinding2:rxbinding-design:2.2.0"
+
+
+    implementation "android.arch.lifecycle:runtime:$arch_version"
+    implementation "android.arch.lifecycle:extensions:$arch_version"
+    annotationProcessor 'android.arch.lifecycle:compiler:2.0.0'
+
+    implementation "android.arch.persistence.room:runtime:$room_version"
+    kapt "android.arch.persistence.room:compiler:$room_version"
+    implementation "android.arch.persistence.room:rxjava2:$room_version"
+
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'com.google.android:flexbox:1.1.0'
+    implementation 'com.google.android.libraries.places:places:2.1.0'
+    implementation 'android.arch.paging:runtime:1.0.1'
+
+
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+    implementation 'com.alexvasilkov:gesture-views:2.5.2'
+    implementation 'com.alexvasilkov:events:1.0.0'
+    implementation 'com.ryanjeffreybrooks:indefinitepagerindicator:1.0.10'
+    implementation "com.theartofdev.edmodo:android-image-cropper:2.7.0"
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+    implementation 'com.michalsvec:single-row-calednar:1.0.0'
+    //scarlet and plugins
+    implementation 'com.github.tinder.scarlet:scarlet:0.1.7'
+    implementation 'com.github.tinder.scarlet:scarlet-websocket-okhttp:0.1.7'
+    implementation 'com.github.tinder.scarlet:scarlet-stream-adapter-rxjava2:0.1.7'
+    implementation 'com.github.tinder.scarlet:scarlet-message-adapter-gson:0.1.7'
+
+    implementation "com.google.android.exoplayer:exoplayer:$exo_player"
+    implementation 'com.github.BlackBoxVision:material-calendar-view:v1.5.7'
+    implementation 'noman.weekcalendar:weekcalendar:1.0.6'
+    implementation 'saschpe.android:customtabs:2.0.0'
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0@aar'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.mikhaellopez:circularimageview:4.0.2'
+
+
+}
+
+//apply plugin: 'com.google.gms.google-services'

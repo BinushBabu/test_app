@@ -1,0 +1,25 @@
+<resources>
+
+
+    <string name="user">User</string>
+    <string name="daily_task">Daily Task</string>
+    <string name="task_calender">Task Calender</string>
+    <string name="search">Search</string>
+    <string name="sunday">Sunday</string>
+    <string name="_18">18</string>
+    <string name="april_2020">April 2020</string>
+    <string name="recycler_view_edit_menu">recycler view edit menu</string>
+    <string name="task_status_icon">Task status icon</string>
+    <string name="nav_button">nav button</string>
+    <string name="clock_in">Clock In</string>
+    <string name="view_all">View All</string>
+    <string name="learn_the_word">Learn The Word</string>
+    <string name="april">April</string>
+    <string name="_10_may_2015">10 May 2015</string>
+    <string name="no_interenet">No Internet</string>
+
+    <string name="un_expected_error_occured"> Un expected error occured</string>
+    <string name="app_name">DemoApp</string>
+
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="out_margin">30dp</dimen>
+    <dimen name="layout_margin">20dp</dimen>
+
+    <dimen name="LoadingDots_dots_size_default">12dp</dimen>
+    <dimen name="LoadingDots_dots_space_default">2dp</dimen>
+    <dimen name="LoadingDots_jump_height_default">12dp</dimen>
+    <dimen name="title_1">24sp</dimen>
+    <dimen name="heading1">24sp</dimen>
+
+    <dimen name="title3">13.5sp</dimen>
+    <dimen name="section_heading_15sp">15sp</dimen>
+    <dimen name="bottom_button_height">54dp</dimen>
+    <dimen name="bottom_botton_bg_height">78dp</dimen>
+    <dimen name="bottom_button_text_size">20sp</dimen>
+
+    <dimen name="space_s1">@dimen/_15sdp</dimen>
+    <dimen name="space_s2">@dimen/_10sdp</dimen>
+    <dimen name="space_s3">@dimen/_7sdp</dimen>
+    <dimen name="space_s4">@dimen/_5sdp</dimen>
+    <dimen name="space_s5">@dimen/_2sdp</dimen>
+
+    <dimen name="h1">@dimen/_20sdp</dimen>
+    <dimen name="h2">@dimen/_15sdp</dimen>
+    <dimen name="h3">@dimen/_12sdp</dimen>
+    <dimen name="h4">@dimen/_10sdp</dimen>
+    <dimen name="h5">@dimen/_8sdp</dimen>
+</resources>

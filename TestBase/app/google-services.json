@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "436086746746",
+    "firebase_url": "https://esseplore-240008.firebaseio.com",
+    "project_id": "esseplore-240008",
+    "storage_bucket": "esseplore-240008.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436086746746:android:6d845f0eada737d3",
+        "android_client_info": {
+          "package_name": "com.esseplore.tourist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436086746746-fb8nj6fls75rl26eutdnpmcl7lql1eb0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdVqxTMZiOZg-ENLyxB5Wa0hdGhm9smq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436086746746-fb8nj6fls75rl26eutdnpmcl7lql1eb0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

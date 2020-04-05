@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryLight">#745856D6</color>
+
+    <color name="textColorDark">#212121</color>
+    <color name="hintTextColor">#99303340</color>
+    <color name="lightGrey">#f2f4fa</color>
+    <color name="borderGrey">#e9eff8</color>
+    <color name="grayLight">#DDDDDD</color>
+    <color name="whiteO77">#C4FFFFFF</color>
+    <color name="whiteGray">#f2f4fa</color>
+    <color name="white95">#F2FFFFFF</color>
+    <color name="white30">#4DFFFFFF</color>
+    <color name="white50">#80FFFFFF</color>
+    <color name="clickableGrey">#303340</color>
+    <color name="grey40">#66303340</color>
+    <color name="greyish">#b1b1b1</color>
+    <color name="blackAlpha">#36000000</color>
+    <color name="errorRed">#A63232</color>
+    <color name="linkBlue">#0645AD</color>
+    <color name="black">#000000</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_overlay65">#A6000000</color>
+    <color name="black_overlay30">#4D000000</color>
+
+    <color name="pin">#F83E3E</color>
+    <color name="dot">#E2E2E2</color>
+
+    <color name="colorPrimary">#FF7043</color>
+    <color name="colorPrimaryDark">#BF360C</color>
+    <color name="colorAccent">#FF6E40</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#6D6666</color>
+
+
+</resources>
